@@ -67,10 +67,12 @@
 	spot the heat coming around the corner'--as he 
 	falls in love. Thus the stage is set for the 
 	suspenseful ending.... </summary>
- <director>	    <last_name>Mann</last_name>
+ <director>
 	    <first_name>Michael</first_name>
-	    <birth_date>1943</birth_date>
-</director> <actor>
+	    <last_name>Mann</last_name>
+        <birth_date>1943</birth_date>
+</director> 
+<actor>
 	    <first_name>Al</first_name>
 	    <last_name>Pacino</last_name>
 	    <birth_date>1940</birth_date>
@@ -116,9 +118,10 @@
 	saddles his ornery nag, and rides off to kill one 
 	more time, blurring the lines between heroism and 
 	villainy, man and myth.</summary>
- <director>	    <last_name>Eastwood</last_name>
+ <director>	    
 	    <first_name>Clint</first_name>
-	    <birth_date>1930</birth_date>
+	    <last_name>Eastwood</last_name>
+        <birth_date>1930</birth_date>
 </director> <actor>
 	    <first_name>Clint</first_name>
 	    <last_name>Eastwood</last_name>
@@ -151,10 +154,12 @@
 	know it's wrong but what could be more right than 
 	love? Chris tries to juggle both women but at some 
 	point, he must choose between them...</summary>
- <director>	    <last_name>Allen</last_name>
+ <director>
 	    <first_name>Woody</first_name>
-	    <birth_date>1935</birth_date>
-</director> <actor>
+	    <last_name>Allen</last_name>
+        <birth_date>1935</birth_date>
+</director>
+<actor>
 	    <first_name>Jonathan</first_name>
 	    <last_name>Rhys Meyers</last_name>
 	    <birth_date>1977</birth_date>
@@ -166,29 +171,31 @@
 	    <birth_date>1984</birth_date>
 	    <role>Nola Rice</role>
 </actor>
- </movie>
-  <movie>
+</movie>
+<movie>
     <title>Lost in Translation</title>
     <year>2003</year>
     <country>USA</country>
     <genre>Drama</genre>
- <director>	    <last_name>Coppola</last_name>
+    <director>
 	    <first_name>Sofia</first_name>
-	    <birth_date>1971</birth_date>
-</director> <actor>
+	    <last_name>Coppola</last_name>
+        <birth_date>1971</birth_date>
+    </director>
+    <actor>
 	    <first_name>Scarlett </first_name>
 	    <last_name>Johansson</last_name>
 	    <birth_date>1984</birth_date>
 	    <role>Charlotte</role>
-</actor>
-<actor>
+    </actor>
+    <actor>
 	    <first_name>Bill</first_name>
 	    <last_name>Murray</last_name>
 	    <birth_date>1950</birth_date>
 	    <role>Bob Harris</role>
-</actor>
+    </actor>
  </movie>
-  <movie>
+<movie>
     <title>Marie Antoinette</title>
     <year>2006</year>
     <country>USA</country>
@@ -199,15 +206,17 @@
 	misunderstood and abused woman in history, from 
 	her birth in Imperial Austria to her later life in 
 	France. </summary>
- <director>	    <last_name>Coppola</last_name>
+    <director>
 	    <first_name>Sofia</first_name>
-	    <birth_date>1971</birth_date>
-</director> <actor>
+	    <last_name>Coppola</last_name>
+        <birth_date>1971</birth_date>
+    </director>
+    <actor>
 	    <first_name>Kirsten</first_name>
 	    <last_name>Dunst</last_name>
 	    <birth_date>1982</birth_date>
 	    <role>Marie Antoinette</role>
-</actor>
+    </actor>
 <actor>
 	    <first_name>Jason </first_name>
 	    <last_name>Schwartzman</last_name>
@@ -231,15 +240,17 @@
 	Even if it means the Goblin has to target Parker's 
 	Aunt (Harris) and the girl he secretly pines for 
 	(Dunst) </summary>
- <director>	    <last_name>Raimi</last_name>
+    <director>
 	    <first_name>Sam</first_name>
-	    <birth_date>1959</birth_date>
-</director> <actor>
+	    <last_name>Raimi</last_name>
+        <birth_date>1959</birth_date>
+    </director> 
+    <actor>
 	    <first_name>Kirsten</first_name>
 	    <last_name>Dunst</last_name>
 	    <birth_date>1982</birth_date>
 	    <role>Mary Jane Watson</role>
-</actor>
+    </actor>
 <actor>
 	    <first_name>Tobey</first_name>
 	    <last_name>Maguire</last_name>
@@ -252,7 +263,7 @@
 	    <birth_date>1955</birth_date>
 	    <role>Green Goblin / Norman Osborn</role>
 </actor>
- </movie>
+</movie>
 
 </movies>
  
