@@ -36,26 +36,33 @@ while True:
         a=input()
         os.system("clear")
     elif opcion == "3":
-        
+        pais=input("Introduce el nombre de un pais:> ")
+        print("Las peliculas rodadas en %s son:" % pais)
+        for pelis in ListarPelis_por_pais(datos,pais):
+            print(pelis)
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
     elif opcion == "4":
-        carretera=input("Introduce una carretera que quieras mostrar las provincias por las que pasa: ")
-        print("Las provincias en las que pasas la carretera son:")
-        for i in buscar_radare_carreteras(doc,carretera).get("Provincias"):
-            print(i, end=" ")
-        print()
-        print("El numero de radares que tiene hay son: %s" % buscar_radare_carreteras(doc,carretera).get("nºradar"))
+        director=input("Introduce el primer nombre de un director:> ")
+        print("Las peliculas de %s son:" % director)
+        for pelicula in ListarPeliculasyActores_por_Director(datos,director):
+            print("Peli: %s" % pelicula.get("titulo")[0])
+            print("En la que aparecen:")
+            for i in pelicula.get("actores"):
+                print(i)
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
     elif opcion == "5":
-        carretera=input("Introduce una carretera que quieras mostrar la ubicación de sus radares: ")
-        print("La ubicación de los radares son las siguientes:")
-        for url in codenada_radar_carretera(doc,carretera).get("url"):
-            print(url)
-        print("El numero de radares que tiene hay son: %s" % codenada_radar_carretera(doc,carretera).get("nºradar"))
+        añoini=input("Introduce el año de inicio a buscar directores:> ")
+        añofin=input("Introduce el año de fin de la busqueda de directores:> ")
+        print("Los direcotres que nacieron Entre %s y el %s son: " % (añoini,añofin))
+        for directores in ListarDirecetoresyPeliculasEntreDosAños(datos,añoini,añofin):
+            print("Director: %s" % directores.get("directores"))
+            print("Que dirigio: ")
+            for i in directores.get("pelis"):
+                print(i)
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
