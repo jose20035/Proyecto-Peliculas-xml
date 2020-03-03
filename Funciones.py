@@ -14,3 +14,9 @@ def ListarPeliculasyActores_por_Director(doc,director):
         resultado.append({"titulo":peliculas,"Actores":doc.xpath("/movies/movie[title/text() = '%s']/actor/first_name/text()" % pelicula)})
     return resultado
 
+def ListarDirecetoresyPeliculasEntreDosAños(doc,fechaini,fechafin):
+    resultado=[]
+    directores=doc.xpath("/movies/movie/director[birth_date>='%i' AND birth_date<='%i']/first_name/text()" % (int(fechaini),int(fechafin)))
+    for director in directores:
+        resultado.append({"directores":director,"pelis":doc.xpath("//movie[director/first_name/text() = '%s']/title/text()" % director)})
+    return resultado
