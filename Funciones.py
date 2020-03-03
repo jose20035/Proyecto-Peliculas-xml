@@ -1,5 +1,8 @@
 def ListarPelis(doc):
-    return {"titulos":doc.xpath("/movies/movie/title/text()"),"años":"/movies/movie/year/text()","genero":doc.xpath("/movies/movie/genre/text()")}
+    respuesta=[]
+    for titulo in doc.xpath("//title/text()"):
+        respuesta.append({"titulo":titulo,"año":doc.xpath("//movie[title = '%s']/year/text()" % titulo),"genero":doc.xpath("//movie[title = '%s']/genre/text()" % titulo)}) 
+    return respuesta
 
 def NPeliculas_por_año(doc,fechaini,fechafin):
     return len(doc.xpath("/movies/movie[year/text()>='%i' and year/text()<='%i']/year/text()" % (int(fechaini),int(fechafin))))

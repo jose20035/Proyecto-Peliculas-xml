@@ -2,10 +2,10 @@ import os
 from lxml import etree
 from Funciones import *
 
-ndoc=input("Introduce la el nombre del documento xml:> ")
+ndatos=input("Introduce la el nombre del documento xml:> ")
 os.system("clear")
 
-doc=etree.parse(ndoc)
+datos=etree.parse(ndatos)
 while True:
     print("Bienvenido.")
     print()
@@ -13,7 +13,7 @@ while True:
     print("2. Contar peluculas entre dos años.")
     print("3. Lispar peliculas de rodadas en un pais.")
     print("4. Peliculas y actores que realizan dicha pelicula de un direcotor en concreto.")
-    print("5. Nombre de direcotres y peliculas entre dos años.")
+    print("5. Nombre de directores y peliculas entre dos años.")
     print("0. Salir")
     print()
     opcion=input(":> ")
@@ -21,25 +21,22 @@ while True:
         print("Error opción no correcta.")
         opcion=input(":> ")
     if opcion == "1":
-        print("Las probincias son:")
-        for i in mostrar_probincias(doc):
-            print(i, end=" ")
-        print()
+        print("Peliculas:")
+        print("--------------------------")
+        for peliculas in ListarPelis(datos):
+            print("Titulo: %s año: %s genero: %s" % (peliculas.get("titulo"),peliculas.get("año")[0],peliculas.get("genero")[0]))
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
     elif opcion == "2":
-        print("El numero de radares registrados son: %s" % contar_radares(doc))
+        añoini=input("Introduce el año de inicio de la busqueda:> ")
+        añofin=input("Introduce el año de fin de la busqueda:> ")
+        print("Se han realizado %s peliculas" % NPeliculas_por_año(datos,añoini,añofin))
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
     elif opcion == "3":
-        provincia=input("Introduce una provincia que quieras mostrar las carreteras: ")
-        print("Carreteras de la provincia son:")
-        for i in buscar_radare_provincias(doc,provincia).get("Carreteras"):
-            print(i, end=" ")
-        print()
-        print("El numero de radares que tiene hay son: %s" % buscar_radare_provincias(doc,provincia).get("nºradar"))
+        
         print("Pulsa enter para continuar")
         a=input()
         os.system("clear")
